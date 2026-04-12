@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Env
+.env
+.venv
+
+# VSCode
+.vscode/
+
+# Mac temp
+*.swp
