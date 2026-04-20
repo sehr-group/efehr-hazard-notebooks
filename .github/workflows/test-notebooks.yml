@@ -1,0 +1,26 @@
+name: test-notebooks
+
+on:
+  push:
+    branches: [main, messina-2026]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests pyyaml scipy matplotlib numpy nbmake pytest
+
+      - name: Run notebooks
+        run: pytest --nbmake notebooks/01_parameter_discovery.ipynb notebooks/02_interactive_hazard_plotter.ipynb notebooks/03_hazard_maps.ipynb
+        env:
+          JUPYTER_PLATFORM_DIRS: "1"

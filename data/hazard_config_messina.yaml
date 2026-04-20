@@ -1,0 +1,91 @@
+location:
+  latitude: 38.19
+  longitude: 15.55
+available_models:
+- id: '71'
+  name: European Seismic Hazard Model 2013 (ESHM13)
+  parameters:
+    imts:
+    - PGA
+    - SA[0.10s]
+    - SA[0.15s]
+    - SA[0.20s]
+    - SA[0.25s]
+    - SA[0.30s]
+    - SA[0.50s]
+    - SA[0.75s]
+    - SA[1.00s]
+    - SA[2.00s]
+    - SA[3.00s]
+    - SA[4.00s]
+    soil_types:
+    - rock_vs30_800ms-1
+    aggregations:
+    - type: ordinal
+      level: '0.05'
+    - type: ordinal
+      level: '0.15'
+    - type: arithmetic
+      level: '0.5'
+    - type: ordinal
+      level: '0.5'
+    - type: ordinal
+      level: '0.85'
+    - type: ordinal
+      level: '0.95'
+    poes: []
+- id: '81'
+  name: European Seismic hazard Model 2020 (ESHM20)
+  parameters:
+    imts:
+    - PGA
+    - SA[0.05s]
+    - SA[0.10s]
+    - SA[0.15s]
+    - SA[0.20s]
+    - SA[0.25s]
+    - SA[0.30s]
+    - SA[0.35s]
+    - SA[0.40s]
+    - SA[0.50s]
+    - SA[0.60s]
+    - SA[0.75s]
+    - SA[1.00s]
+    - SA[2.00s]
+    - SA[3.00s]
+    - SA[4.00s]
+    - SA[5.00s]
+    soil_types:
+    - rock_vs30_800ms-1
+    aggregations:
+    - type: ordinal
+      level: '0.05'
+    - type: ordinal
+      level: '0.16'
+    - type: arithmetic
+      level: '0.5'
+    - type: ordinal
+      level: '0.5'
+    - type: ordinal
+      level: '0.84'
+    - type: ordinal
+      level: '0.95'
+    poes:
+    - prob: '1.9999E-4'
+      years: '1'
+      label: 5000-yr RP  (1.0% in 50y)
+    - prob: '3.99999E-4'
+      years: '1'
+      label: 2500-yr RP  (2.0% in 50y)
+    - prob: '0.0010249'
+      years: '1'
+      label: 976-yr RP  (5.0% in 50y)
+    - prob: '0.002103'
+      years: '1'
+      label: 476-yr RP  (10.0% in 50y)
+    - prob: '0.00989'
+      years: '1'
+      label: 101-yr RP  (39.0% in 50y)
+    - prob: '0.02'
+      years: '1'
+      label: 50-yr RP  (63.2% in 50y)

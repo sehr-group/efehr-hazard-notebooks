@@ -1,0 +1,8 @@
+requests
+pyyaml
+scipy
+matplotlib
+numpy
+# optional - notebooks degrade gracefully without these
+cartopy
+folium
