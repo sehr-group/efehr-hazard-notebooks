@@ -1,4 +1,6 @@
-# Geo-INQUIRE | EFEHR Workshop
+# Geo-INQUIRE | ESHM20 Seismic Hazard Workshop
+
+## From Data to Hazard Modeling 
 
 **Messina, April 2026**
 
