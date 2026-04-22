@@ -13,4 +13,5 @@ dependencies:
   - numpy
   - cartopy
   - folium
+  - pandas
   - pip
