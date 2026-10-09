@@ -95,9 +95,9 @@ Downloads spatial hazard grids via `/v1/maps/area`, plots them geographically, a
 
 | Service | Base URL | Used in |
 |---------|----------|---------|
-| **REST JSON API** | `efehr-services.ethz.ch/api` | NB 01, 02, 03 |
-| **WMS** | `efehr-services.ethz.ch/ows/eshm20-output` | NB 03 Exercise E |
-| **OGC API Features** | `efehr-services.ethz.ch/ows/eshm20-input/ogcapi` | NB 03 Exercise E |
+| **REST JSON API** | `efehr-services.ethz.ch/hazard/api` | NB 01, 02, 03 |
+| **WMS** | `efehr-services.ethz.ch/hazard/ows/eshm20-output` | NB 03 Exercise E |
+| **OGC API Features** | `efehr-services.ethz.ch/hazard/ows/eshm20-input/ogcapi` | NB 03 Exercise E |
 
 Key REST endpoints used by the notebooks:
 
